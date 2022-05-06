@@ -1,12 +1,13 @@
-using Emgu.CV;
-using Emgu.CV.Cuda;
-using Emgu.CV.Structure;
+
+
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 
 namespace lab2
 {
     public partial class Form1 : Form
     {
-        private Image<Bgr, byte> inputImage;
+        private Bitmap inputImage;
 
         public Form1()
         {
@@ -22,8 +23,8 @@ namespace lab2
 
                 if (res == DialogResult.OK)
                 {
-                    inputImage = new Image<Bgr, byte>(openFileDialog1.FileName);
-                    pictureBox1.Image = inputImage.ToBitmap();
+                    inputImage = new Bitmap(openFileDialog1.FileName);
+                    pictureBox1.Image = inputImage;
                 }
                 else
                 {
@@ -37,15 +38,8 @@ namespace lab2
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Mat image = inputImage.Convert<Gray, byte>().ThresholdBinary(new Gray(100), new Gray(255)).Mat;
-            GpuMat gpOutputImage = new GpuMat();
-            GpuMat<Gray> gpInputImage = new GpuMat<Gray> (image);
-            CudaCannyEdgeDetector canny = new CudaCannyEdgeDetector(100.0,200.0);
-            canny.Detect(gpInputImage, gpOutputImage);
-            Mat outputImage = new Mat(gpOutputImage.ToString());
-            pictureBox2.Image = outputImage.ToBitmap();
-            //bool test = CudaInvoke.HasCuda;
-            //MessageBox.Show(test.ToString());
+            Canny canny = new Canny(inputImage);
+            pictureBox2.Image = canny.DisplayImage(canny.EdgeMap);
 
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uIKhvBfdznLj2m5j92X6Zxj7f90NxegRJ7hBnNp/3RBsy7+0+dIDv90p/YBWA5Jw/TbsesJPgu+1KMJXU/PEgg==",
+  "dgSpecHash": "cdFitlVovHc3tPq03d3yt5fIUFZIQAi+7itwcws2HCnnnEzWANkwq81LSkI0vvrEB1634KT0UulrnvhErLGcsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sauru\\Desktop\\lab2\\lab2\\lab2.csproj",
+  "projectFilePath": "C:\\Users\\sauru\\Desktop\\OGMS_lab2\\lab2\\lab2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sauru\\.nuget\\packages\\emgu.cv\\4.4.0.4099\\emgu.cv.4.4.0.4099.nupkg.sha512",
     "C:\\Users\\sauru\\.nuget\\packages\\emgu.cv.bitmap\\4.4.0.4099\\emgu.cv.bitmap.4.4.0.4099.nupkg.sha512",

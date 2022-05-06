@@ -1764,11 +1764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sauru\\Desktop\\lab2\\lab2\\lab2.csproj",
+      "projectUniqueName": "C:\\Users\\sauru\\Desktop\\OGMS_lab2\\lab2\\lab2.csproj",
       "projectName": "lab2",
-      "projectPath": "C:\\Users\\sauru\\Desktop\\lab2\\lab2\\lab2.csproj",
+      "projectPath": "C:\\Users\\sauru\\Desktop\\OGMS_lab2\\lab2\\lab2.csproj",
       "packagesPath": "C:\\Users\\sauru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sauru\\Desktop\\lab2\\lab2\\obj\\",
+      "outputPath": "C:\\Users\\sauru\\Desktop\\OGMS_lab2\\lab2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1836,7 +1836,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
