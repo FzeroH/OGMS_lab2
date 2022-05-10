@@ -637,6 +637,5 @@ namespace lab2
             return;
         }
 
-        //Canny Class Ends
     }
 }
